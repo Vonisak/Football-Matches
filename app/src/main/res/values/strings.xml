@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">sport</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="onexbet_link"><u>1xbet</u></string>
+    <string name="betboom_link"><u>BetBoom</u></string>
+    <string name="fonbet_link"><u>FonBet</u></string>
+    <string name="statistics_fouls">Fouls</string>
+    <string name="statistics_corners">Corners</string>
+    <string name="statistics_offsides">Offsides</string>
+    <string name="statistics_total_shots">Total shots</string>
+    <string name="statistics_shots_off_target">Shots off target</string>
+    <string name="statistics_shots_blocked">Shots blocked</string>
+    <string name="statistics_penalties">Penalties</string>
+    <string name="statistics_delimiter">Statistics</string>
+    <string name="information_delimiter">Information</string>
+    <string name="links_delimiter">Links</string>
+    <string name="away_team_logo_content_description">away team logo</string>
+    <string name="home_team_logo_content_description">home team logo</string>
+    <string name="match_status_prefix">Match status:</string>
+    <string name="league_prefix">League:</string>
+    <string name="season_prefix">Season:</string>
+    <string name="group_prefix">Group:</string>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    app:cardCornerRadius="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/home_team_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@string/home_team_logo_content_description"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/home_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/home_team_logo"
+            app:layout_constraintStart_toStartOf="@id/home_team_logo"
+            app:layout_constraintTop_toBottomOf="@id/home_team_logo"
+            tools:text="Team 1" />
+
+        <TextView
+            android:id="@+id/full_time_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toBottomOf="@id/home_team_logo"
+            app:layout_constraintEnd_toStartOf="@id/away_team_logo"
+            app:layout_constraintStart_toEndOf="@id/home_team_logo"
+            app:layout_constraintTop_toTopOf="@id/home_team_logo"
+            tools:text="0-2" />
+
+        <ImageView
+            android:id="@+id/away_team_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="40dp"
+            android:contentDescription="@string/away_team_logo_content_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/away_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/away_team_logo"
+            app:layout_constraintStart_toStartOf="@id/away_team_logo"
+            app:layout_constraintTop_toBottomOf="@id/away_team_logo"
+            tools:text="Team 2" />
+
+        <TextView
+            android:id="@+id/stage_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/full_time_score"
+            app:layout_constraintEnd_toEndOf="@id/full_time_score"
+            app:layout_constraintStart_toStartOf="@id/full_time_score"
+            tools:text="Playoffs" />
+
+        <TextView
+            android:id="@+id/round_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@id/full_time_score"
+            app:layout_constraintStart_toStartOf="@id/full_time_score"
+            app:layout_constraintTop_toBottomOf="@id/full_time_score"
+            tools:text="Final" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
